@@ -1,0 +1,5 @@
+sceneSetups:
+- path: E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/Scenes/GamePlay.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
