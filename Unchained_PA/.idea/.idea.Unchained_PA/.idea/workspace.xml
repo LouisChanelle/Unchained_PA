@@ -15,12 +15,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/SpawnerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/SpawnerScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/DL/2020_3A_3DJV_HandsOnUnity-master/Assets/JumpingCube/Scripts/JumpWithMecanimScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/DL/2020_3A_3DJV_HandsOnUnity-master/Assets/JumpingCube/Scripts/JumpWithTransformScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/cameraOffset.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/RushToTargetScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/DL/2020_3A_3DJV_HandsOnUnity-master/Assets/JumpingCube/Scripts/JumpWithTransformWithFakePhysicsScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/RushToTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/DL/2020_3A_3DJV_HandsOnUnity-master/Assets/JumpingCube/Scripts/JumpWithTransformScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/RushToTargetScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/enemyKiller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/DL/2020_3A3DJV_Carrouf-master/Assets/Carrouf/Scripts/BallDestroyerManagerScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/DL/2020_3A3DJV_Carrouf-master/Assets/Carrouf/Scripts/TriggerDispatcherScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/DL/2020_3A_3DJV_HandsOnUnity-master/Assets/JumpingCube/Scripts/JumpWithTransformWithFakePhysicsScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/cameraOffset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/RushToTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Jump.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -32,6 +35,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/cameraOffset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/enemyKiller.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +88,7 @@
       <workItem from="1581356516563" duration="816000" />
       <workItem from="1581357461678" duration="3118000" />
       <workItem from="1581440302851" duration="4135000" />
+      <workItem from="1581613315174" duration="4368000" />
     </task>
     <servers />
   </component>
