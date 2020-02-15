@@ -1,24 +1,41 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
 public class enemyKiller : MonoBehaviour
 {
-    [SerializeField] private Transform enemyPos;
-    
-    private void OnTriggerEnter (Collider other)
-    {
-        if (!Input.GetKey(KeyCode.A))
-        {
-            return;
-        }
+    private List<GameObject> nearEnemy = new List<GameObject>();
+    private Collider _collider;
 
-        if (other.CompareTag("enemy"))
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("enemy"))
         {
-            Debug.Log("I'm in ! I'M IN");
-            Collider.Destroy(other.gameObject);
+            nearEnemy.Add(other.gameObject);
+            Debug.Log("i'm in bruh");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("enemy"))
+        {
+            nearEnemy.Remove(other.gameObject);
+            Debug.Log("i'm out bruh");
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            foreach (GameObject t in nearEnemy)
+            {
+                Destroy(t);
+            }
         }
     }
 }
