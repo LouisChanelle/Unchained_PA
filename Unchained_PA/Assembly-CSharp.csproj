@@ -61,6 +61,7 @@
      <Compile Include="Assets\Script\RushToTarget.cs" />
      <Compile Include="Assets\Script\SpawnerScript.cs" />
      <Compile Include="Assets\Script\cameraOffset.cs" />
+     <Compile Include="Assets\Script\damage.cs" />
      <Compile Include="Assets\Script\enemyKiller.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/chane/Documents/GitHub/Unchained_PA/Unchained_PA/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

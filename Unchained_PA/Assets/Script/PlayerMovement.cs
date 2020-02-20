@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float rotSpeed;
+    private Quaternion from = Quaternion.Euler(0f, 0f, 0f);
+    private Quaternion to = Quaternion.Euler(0f, 180f, 0f);
+    
     private void Start()
     {
         
@@ -16,24 +19,23 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         var moveIntent = Vector3.zero;
-        float rotate = 0f;
         
         if (Input.GetKey(KeyCode.D))
         {
             moveIntent += Vector3.forward;
-            rotate += 30f;
+            transform.rotation = Quaternion.Lerp(to, from, Time.time * rotSpeed);
         }
 
         if (Input.GetKey(KeyCode.Q))
         {
             moveIntent += Vector3.back;
-            rotate += 30f;
+            transform.rotation = Quaternion.Lerp(from, to, Time.time * rotSpeed);
         }
         
         
         moveIntent = moveIntent.normalized;
         
 
-        transform.position += moveIntent * moveSpeed * Time.deltaTime;
+        transform.position += Time.deltaTime * moveSpeed * moveIntent;
     }
 }
