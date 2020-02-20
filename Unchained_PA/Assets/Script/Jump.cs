@@ -1,16 +1,46 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+/*    [SerializeField] private Rigidbody target;
+
+    [SerializeField] private float jumpStartSpeed;
+
+    private void Update()
+    {
+        CheckForJumpIntent();
+        target.WakeUp();
+    }
+
+    void CheckForJumpIntent()
+    {
+        if (!Input.GetKeyDown(KeyCode.Space) ||
+            !Physics.SphereCast(new Ray(target.transform.position, Vector3.down), 0.48f, 0.1f))
+        {
+            return;
+        }
+        
+        target.velocity = Vector3.up * jumpStartSpeed;
+        
+    }*/
+
+
     [SerializeField] private Transform targetTransform;
+    [SerializeField] private GameObject ground;
     
     [SerializeField] private float jumpStartSpeed;
     private bool isJumping;
     private float currentSpeed;
-    [SerializeField] private float gravityMagnitude;
-    
+    private float gravityMagnitude = -9.81f;
+
+    private void Start()
+    {
+        Debug.Log(ground.transform.localScale.y);
+    }
+
     void Update()
     {
         UpdateJumpPosition();
@@ -28,12 +58,12 @@ public class Jump : MonoBehaviour
 
         targetTransform.position += Time.deltaTime * currentSpeed * Vector3.up;
 
-        if (!(targetTransform.position.y <= 0f))
+        if (!(targetTransform.position.y <= 3f))
         {
             return;
         }
 
-        targetTransform.position = Vector3.zero;
+        targetTransform.position = new Vector3(transform.position.x, 3f, transform.position.z);
         isJumping = false;
     }
 

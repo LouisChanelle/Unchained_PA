@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 5903431580604276982}
-  jumpStartSpeed: 2
-  gravityMagnitude: 9.81
+  jumpStartSpeed: 5
+  gravityMagnitude: -9.81
 --- !u!1001 &7909827339260880508
 PrefabInstance:
   m_ObjectHideFlags: 0
