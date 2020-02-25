@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class enemyKiller : MonoBehaviour
@@ -19,6 +20,7 @@ public class enemyKiller : MonoBehaviour
     
     [SerializeField] private GameObject can;
 
+
     private void Start()
     {
         renderer = GetComponent<Renderer>();
@@ -30,7 +32,7 @@ public class enemyKiller : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag($"enemy"))
         { 
             nearEnemy.Add(other.gameObject);
             diffKills = diffKills + 1;
@@ -39,7 +41,7 @@ public class enemyKiller : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag($"enemy"))
         {
             nearEnemy.Remove(other.gameObject);
             diffKills = diffKills - 1;
@@ -68,11 +70,10 @@ public class enemyKiller : MonoBehaviour
                 Destroy(t);
             }
         }
+
         else if (!Input.GetKeyDown(KeyCode.Mouse0))
         {
             renderer.material.color = colorStart;
         }
-
-        
     }
 }

@@ -65,6 +65,8 @@
      <Compile Include="Assets\Script\cameraOffset.cs" />
      <Compile Include="Assets\Script\damage.cs" />
      <Compile Include="Assets\Script\enemyKiller.cs" />
+     <Compile Include="Assets\Script\escapeMenu.cs" />
+     <Compile Include="Assets\Script\mainMenu.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Docs/Cours/Projet annuel/Unchained_PA/Unchained_PA/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

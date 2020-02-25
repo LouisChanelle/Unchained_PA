@@ -8,6 +8,8 @@ TagManager:
   - MainCanvas
   - CounterKill
   - CanvasCount
+  - escapeCanvas
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - Player
   - Enemy
-  - 
+  - hitter
   - 
   - 
   - 

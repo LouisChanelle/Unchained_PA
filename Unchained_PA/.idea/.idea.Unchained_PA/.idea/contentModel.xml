@@ -12,7 +12,9 @@
           <e p="damage.cs" t="Include" />
           <e p="EndGame.cs" t="Include" />
           <e p="enemyKiller.cs" t="Include" />
+          <e p="escapeMenu.cs" t="Include" />
           <e p="Jump.cs" t="Include" />
+          <e p="mainMenu.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="RushToTarget.cs" t="Include" />
           <e p="SpawnBoss.cs" t="Include" />

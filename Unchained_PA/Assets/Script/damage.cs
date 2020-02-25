@@ -2,19 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class damage : MonoBehaviour
 {
     [SerializeField] private int hp;
-    [SerializeField] private GameObject player;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.CompareTag("enemy")) return;
-        hp -= 1;
-        
+        hp--;
+
         if (hp == 0)
         {
-            Destroy(player);
+            Destroy(gameObject);
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
         Debug.Log(hp);

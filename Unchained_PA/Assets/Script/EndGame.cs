@@ -15,10 +15,8 @@ public class EndGame : MonoBehaviour
     void Awake()
     {
         EnemyKiller= GetComponent<enemyKiller>();
-        
-
-
     }
+    
     void Start()
     {
         WinCanvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
