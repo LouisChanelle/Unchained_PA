@@ -43,7 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07726bf7bd3b9d0478cf510debb0df0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPos: {fileID: 7619704097363407921, guid: 3225b5d16a2ef7c4bba2716d9bf6ad83,
-    type: 3}
-  obj: {fileID: 1910960104049078717, guid: 7e91cdceee37ad9419903c8745cdf3c8, type: 3}
-  parent: {fileID: 5903431580604276970, guid: ea6a7504e56677c4085a57266d89f5fa, type: 3}
+  countKills: 0
