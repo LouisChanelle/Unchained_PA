@@ -11,6 +11,8 @@ public class SpawnerScript : MonoBehaviour
 
     [SerializeField] private float spawnDelay;
 
+    private SpawnBoss boss;
+    
     private float lastSpawnDate;
     private RushToTarget _rushToTarget;
     private Text CounterOfKill;
@@ -32,12 +34,9 @@ public class SpawnerScript : MonoBehaviour
             if (Time.time - lastSpawnDate >= spawnDelay)
             {
                 var spawned = Instantiate(enemy, transform.position, Quaternion.identity);
-                _rushToTarget.target = playerTransform;
+                spawned.GetComponent<RushToTarget>().target = playerTransform;
                 lastSpawnDate = Time.time;
             }
         }
-        
-        
-        
     }
 }

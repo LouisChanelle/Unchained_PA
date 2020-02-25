@@ -16,22 +16,24 @@ public class enemyKiller : MonoBehaviour
     private int diffKills = 0;
     public  int countKills ;
     private Text CounterOfKill;
+    
+    [SerializeField] private GameObject can;
 
     private void Start()
     {
         renderer = GetComponent<Renderer>();
         colorStart = renderer.material.GetColor($"Color");
-        CounterOfKill = GameObject.FindGameObjectWithTag("CounterKill").GetComponent<Text>();
+        
+        CounterOfKill = can.GetComponent<Text>();
         CounterOfKill.text = countKills.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("enemy"))
-        {
-            
+        { 
             nearEnemy.Add(other.gameObject);
-            diffKills = diffKills +1;
+            diffKills = diffKills + 1;
         }
     }
 

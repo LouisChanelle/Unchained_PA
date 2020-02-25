@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4526149601012151644}
   - component: {fileID: 8952306578929423980}
   - component: {fileID: 5439659415575376204}
-  - component: {fileID: 7490516001332823233}
-  m_Layer: 0
+  - component: {fileID: -3229983226578837045}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8918999653841576825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -63.82843, y: -18.50845, z: -5.285969}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,7 +94,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7490516001332823233
+--- !u!114 &-3229983226578837045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,5 +106,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db389df60d6c2074da68258d40cc20d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 5903431580604276982, guid: ea6a7504e56677c4085a57266d89f5fa, type: 3}
-  moveSpeed: 4
+  target: {fileID: 0}
+  moveSpeed: 3

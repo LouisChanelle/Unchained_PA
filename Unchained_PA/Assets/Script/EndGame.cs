@@ -10,7 +10,7 @@ public class EndGame : MonoBehaviour
     private Canvas WinCanvas;
     private Canvas CanvasCount;
 
-     
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -32,11 +32,14 @@ public class EndGame : MonoBehaviour
         GetCountKills = EnemyKiller.countKills;
         
         
-        if (GetCountKills == 0)
+        if (GetCountKills == 1)
         {
             WinCanvas.enabled = true;
-            
-            
+        }
+
+        if (GetCountKills == 0)
+        {
+            WinCanvas.enabled = false;
         }
         
     }

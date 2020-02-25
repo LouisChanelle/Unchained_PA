@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RushToTarget : MonoBehaviour
 {
-    [SerializeField] public Transform target;
-    [SerializeField] private float moveSpeed;
+    public Transform target;
+    public float moveSpeed;
 
     void Update()
     {
@@ -17,6 +17,7 @@ public class RushToTarget : MonoBehaviour
         transform.LookAt(target);
 
         var direction = target.position - transform.position;
+        direction.x = 0;
         direction.y = 0;
         direction = direction.normalized;
 

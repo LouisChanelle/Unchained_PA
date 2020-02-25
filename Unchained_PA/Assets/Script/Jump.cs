@@ -5,29 +5,6 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-/*    [SerializeField] private Rigidbody target;
-
-    [SerializeField] private float jumpStartSpeed;
-
-    private void Update()
-    {
-        CheckForJumpIntent();
-        target.WakeUp();
-    }
-
-    void CheckForJumpIntent()
-    {
-        if (!Input.GetKeyDown(KeyCode.Space) ||
-            !Physics.SphereCast(new Ray(target.transform.position, Vector3.down), 0.48f, 0.1f))
-        {
-            return;
-        }
-        
-        target.velocity = Vector3.up * jumpStartSpeed;
-        
-    }*/
-
-
     [SerializeField] private Transform targetTransform;
     [SerializeField] private GameObject ground;
     
