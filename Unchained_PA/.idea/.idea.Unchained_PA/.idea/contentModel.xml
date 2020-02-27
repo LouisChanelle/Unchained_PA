@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\chane\.Rider2019.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\chane\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\chane\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Unchained_PA.-553811363.00" t="ExcludeRecursive" />
-    <e p="D:\Docs\Cours\Projet annuel\Unchained_PA\Unchained_PA" t="IncludeRecursive">
+    <e p="C:\Users\chane\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Unchained_PA.-1849216842.00" t="ExcludeRecursive" />
+    <e p="C:\Users\chane\Documents\GitHub\Unchained_PA\Unchained_PA" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
-          <e p="cameraOffset.cs" t="Include" />
-          <e p="damage.cs" t="Include" />
-          <e p="EndGame.cs" t="Include" />
-          <e p="enemyKiller.cs" t="Include" />
-          <e p="escapeMenu.cs" t="Include" />
-          <e p="Jump.cs" t="Include" />
-          <e p="mainMenu.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-          <e p="RushToTarget.cs" t="Include" />
-          <e p="SpawnBoss.cs" t="Include" />
-          <e p="SpawnerScript.cs" t="Include" />
+          <e p="Enemies" t="Include">
+            <e p="bossDeath.cs" t="Include" />
+            <e p="enemyKiller.cs" t="Include" />
+            <e p="RushToTarget.cs" t="Include" />
+            <e p="SpawnBoss.cs" t="Include" />
+            <e p="SpawnerScript.cs" t="Include" />
+          </e>
+          <e p="Menues" t="Include">
+            <e p="EndGame.cs" t="Include" />
+            <e p="escapeMenu.cs" t="Include" />
+            <e p="mainMenu.cs" t="Include" />
+            <e p="nextLevel.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="cameraOffset.cs" t="Include" />
+            <e p="damage.cs" t="Include" />
+            <e p="Jump.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
