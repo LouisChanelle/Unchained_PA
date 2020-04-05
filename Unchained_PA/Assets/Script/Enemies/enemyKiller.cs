@@ -15,12 +15,10 @@ public class enemyKiller : MonoBehaviour
     private Color colorEnd = Color.yellow + Color.red;
     private Renderer renderer;
     private int diffKills = 0;
-    public  int countKills ;
+    public  int countKills;
     private Text CounterOfKill;
     
     [SerializeField] private GameObject can;
-
-
     private void Start()
     {
         renderer = GetComponent<Renderer>();
@@ -69,6 +67,7 @@ public class enemyKiller : MonoBehaviour
                 }
                 Destroy(t);
             }
+
         }
 
         else if (!Input.GetKeyDown(KeyCode.Mouse0))

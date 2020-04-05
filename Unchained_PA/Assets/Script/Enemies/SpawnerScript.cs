@@ -11,7 +11,7 @@ public class SpawnerScript : MonoBehaviour
 
     [SerializeField] private float spawnDelay;
 
-    private SpawnBoss boss;
+    [SerializeField] private GameObject spawner;
     
     private float lastSpawnDate;
     private RushToTarget _rushToTarget;
@@ -33,9 +33,16 @@ public class SpawnerScript : MonoBehaviour
         {
             if (Time.time - lastSpawnDate >= spawnDelay)
             {
-                var spawned = Instantiate(enemy, transform.position, Quaternion.identity);
-                spawned.GetComponent<RushToTarget>().target = playerTransform;
+                GameObject enemies = objectPooling.SharedInstance.GetPooledObject();
+
+                enemies.transform.position = spawner.transform.position;
+                enemies.GetComponent<RushToTarget>().target = playerTransform;
+                enemies.SetActive(true);
                 lastSpawnDate = Time.time;
+
+                /*var spawned = Instantiate(enemy, transform.position, Quaternion.identity);
+                spawned.GetComponent<RushToTarget>().target = playerTransform;
+                lastSpawnDate = Time.time;*/
             }
         }
     }

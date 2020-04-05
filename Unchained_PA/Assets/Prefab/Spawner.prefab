@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -47,3 +47,4 @@ MonoBehaviour:
   playerTransform: {fileID: 5903431580604276982, guid: ea6a7504e56677c4085a57266d89f5fa,
     type: 3}
   spawnDelay: 1
+  spawner: {fileID: 3544012257226854409}

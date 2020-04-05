@@ -14,6 +14,10 @@
             <e p="SpawnBoss.cs" t="Include" />
             <e p="SpawnerScript.cs" t="Include" />
           </e>
+          <e p="GameController" t="Include">
+            <e p="objectPooling.cs" t="Include" />
+            <e p="worldGeneration.cs" t="Include" />
+          </e>
           <e p="Menues" t="Include">
             <e p="EndGame.cs" t="Include" />
             <e p="escapeMenu.cs" t="Include" />

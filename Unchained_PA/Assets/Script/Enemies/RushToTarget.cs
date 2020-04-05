@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,11 @@ public class RushToTarget : MonoBehaviour
 {
     public Transform target;
     public float moveSpeed;
+
+    private void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
 
     void Update()
     {
@@ -18,7 +24,6 @@ public class RushToTarget : MonoBehaviour
 
         var direction = target.position - transform.position;
         direction.x = 0;
-        direction.y = 0;
         direction = direction.normalized;
 
         transform.position += direction * moveSpeed * Time.deltaTime;

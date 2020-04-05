@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07726bf7bd3b9d0478cf510debb0df0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countKills: 5
+  countKills: 400
   can: {fileID: 0}
 --- !u!114 &2132025997301027818
 MonoBehaviour:
@@ -59,4 +59,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 3
-  player: {fileID: 0}

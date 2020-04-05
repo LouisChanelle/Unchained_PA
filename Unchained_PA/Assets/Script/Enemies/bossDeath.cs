@@ -8,11 +8,20 @@ public class bossDeath : MonoBehaviour
 {
     private List<GameObject> bossList = new List<GameObject>();
     private bool bossIsIn = false;
+    private Canvas endCan;
+    public int hp;
     
+    private void Start()
+    {
+        endCan = GameObject.FindGameObjectWithTag("EndCanvas").GetComponent<Canvas>();
+        endCan.enabled = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("boss"))
         {
+            bossList.Add(other.gameObject);
             bossIsIn = true;
         }
     }
@@ -21,13 +30,13 @@ public class bossDeath : MonoBehaviour
     {
         if (other.gameObject.CompareTag("boss"))
         {
+            bossList.Remove(other.gameObject);
             bossIsIn = false;
         }
     }
 
     void Update()
     {
-        
         if (Input.GetKey(KeyCode.Mouse0))
         {
             foreach (var t in bossList)
@@ -35,10 +44,9 @@ public class bossDeath : MonoBehaviour
                 Destroy(t);
             }
 
-            if (bossIsIn == true)
+            if (bossIsIn)
             {
-                Debug.Log("bossIsIn");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                endCan.enabled = true;
             }
         }
     }
