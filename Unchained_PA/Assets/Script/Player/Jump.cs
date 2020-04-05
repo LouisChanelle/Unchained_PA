@@ -1,51 +1,44 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    [SerializeField] private Transform targetTransform;
-    
-    [SerializeField] private float jumpStartSpeed;
-    private bool isJumping;
-    private float currentSpeed;
-    private float gravityMagnitude = -9.81f;
-
-    void Update()
+    public Vector3 jump;
+    public float jumpForce = 2.0f;
+     
+    public bool isGrounded;
+    Rigidbody rb;
+    public bool isOnWorld;
+    void Start(){
+        rb = GetComponent<Rigidbody>();
+        jump = new Vector3(0.0f, 2.0f, 0.0f);
+    }
+     
+    void OnCollisionStay()
     {
-        UpdateJumpPosition();
-        CheckForJumpIntent();
+        if(!isGrounded && isOnWorld) { 
+            isGrounded = true; 
+        }
+        
     }
 
-    private void UpdateJumpPosition()
+    private void OnTriggerEnter(Collider other)
     {
-        if (!isJumping)
+
+        if (other.gameObject.CompareTag($"world"))
         {
-            return;
+            isOnWorld = true;
         }
-
-        currentSpeed += gravityMagnitude * Time.deltaTime;
-
-        targetTransform.position += Time.deltaTime * currentSpeed * Vector3.up;
-
-        if (!(targetTransform.position.y <= 3f))
-        {
-            return;
-        }
-
-        targetTransform.position = new Vector3(transform.position.x, 3f, transform.position.z);
-        isJumping = false;
     }
 
-    private void CheckForJumpIntent()
-    {
-        if (!Input.GetKeyDown(KeyCode.Space) || isJumping)
-        {
-            return;
+    void Update(){
+        
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
+     
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+            isOnWorld = false;
         }
-
-        isJumping = true;
-        currentSpeed = jumpStartSpeed;
     }
 }
