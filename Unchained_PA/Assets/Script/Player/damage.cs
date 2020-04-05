@@ -19,4 +19,14 @@ public class damage : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
+
+    private void Update()
+    {
+        if (gameObject.transform.position.y < -250f)
+        {
+            Destroy(gameObject);
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+    }
 }
