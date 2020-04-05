@@ -58,8 +58,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnBoss.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Jump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/damage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/mainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/HitPointManagerScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -77,6 +90,17 @@
         <option value="$PROJECT_DIR$/Assets/Script/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/enemyKiller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/bossDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +111,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -139,6 +164,10 @@
       <workItem from="1582640199590" duration="11030000" />
       <workItem from="1582656814372" duration="6448000" />
       <workItem from="1582824345317" duration="2236000" />
+      <workItem from="1585934987521" duration="2900000" />
+      <workItem from="1585941219933" duration="8853000" />
+      <workItem from="1585994672771" duration="25597000" />
+      <workItem from="1586083951023" duration="21870000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,6 +30,7 @@ public class EndGame : MonoBehaviour
     {
         GetCountKills = EnemyKiller.countKills;
         
+        Debug.Log(Time.time);
         
         if (GetCountKills == 1)
         {

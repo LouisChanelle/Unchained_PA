@@ -18,7 +18,5 @@ public class damage : MonoBehaviour
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
-
-        Debug.Log(hp);
     }
 }

@@ -6,17 +6,11 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     [SerializeField] private Transform targetTransform;
-    [SerializeField] private GameObject ground;
     
     [SerializeField] private float jumpStartSpeed;
     private bool isJumping;
     private float currentSpeed;
     private float gravityMagnitude = -9.81f;
-
-    private void Start()
-    {
-        Debug.Log(ground.transform.localScale.y);
-    }
 
     void Update()
     {

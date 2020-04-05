@@ -10,6 +10,7 @@ TagManager:
   - CanvasCount
   - escapeCanvas
   - boss
+  - EndCanvas
   layers:
   - Default
   - TransparentFX

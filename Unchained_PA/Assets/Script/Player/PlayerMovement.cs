@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float rotSpeed;
     private Quaternion from = Quaternion.Euler(0f, 0f, 0f);
     private Quaternion to = Quaternion.Euler(0f, 180f, 0f);
-    
     private void Start()
     {
         
