@@ -45,5 +45,7 @@ public class SpawnerScript : MonoBehaviour
                 lastSpawnDate = Time.time;*/
             }
         }
+
+        Debug.Log(Time.time - lastSpawnDate);
     }
 }

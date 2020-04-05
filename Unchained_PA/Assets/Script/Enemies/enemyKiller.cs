@@ -65,7 +65,8 @@ public class enemyKiller : MonoBehaviour
                     
                     diffKills = diffKills - 1;
                 }
-                Destroy(t);
+                //Destroy(t);
+                t.SetActive(false);
             }
 
         }

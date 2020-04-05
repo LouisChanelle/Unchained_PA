@@ -95,12 +95,12 @@
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
       </list>
     </option>
   </component>
@@ -168,6 +168,7 @@
       <workItem from="1585941219933" duration="8853000" />
       <workItem from="1585994672771" duration="25597000" />
       <workItem from="1586083951023" duration="22330000" />
+      <workItem from="1586120282452" duration="2868000" />
     </task>
     <servers />
   </component>
