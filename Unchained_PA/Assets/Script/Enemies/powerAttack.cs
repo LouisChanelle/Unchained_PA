@@ -17,12 +17,20 @@ public class powerAttack : MonoBehaviour
     private int diffKills = 0;
     private  int countKills;
     private Text CounterOfKill;
-    private float disp = 100f;
+    public float disp = 100f;
     private bool regen;
     private float cd = 2.5f;
     private float regenStart;
     
+    public static powerAttack SharedInstance;
+    
     [SerializeField] private GameObject can;
+
+    private void Awake()
+    {
+        SharedInstance = this;
+    }
+
     private void Start()
     {
         renderer = GetComponent<Renderer>();
