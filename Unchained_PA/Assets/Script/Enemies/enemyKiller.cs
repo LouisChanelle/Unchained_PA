@@ -14,8 +14,8 @@ public class enemyKiller : MonoBehaviour
     private Color colorStart;
     private Color colorEnd = Color.yellow + Color.red;
     private Renderer renderer;
-    private int diffKills = 0;
-    private  int countKills;
+    public int diffKills = 0;
+    public  int countKills;
     private Text CounterOfKill;
     
     [SerializeField] private GameObject can;
@@ -50,6 +50,7 @@ public class enemyKiller : MonoBehaviour
 
     private void Update()
     {
+        countKills = GameObject.FindGameObjectWithTag("pwrAttack").GetComponent<powerAttack>().countKills;
         float lerp = Mathf.PingPong(Time.time, 0.1f) / 0.1f;
         if (Input.GetKey(KeyCode.Mouse0))
         {

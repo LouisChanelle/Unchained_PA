@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class damage : MonoBehaviour
 {
-    [SerializeField] private int hp;
+    public int hp;
+    private void Start()
+    {
+        hp = 100;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,6 +33,7 @@ public class damage : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(hp);
         if (gameObject.transform.position.y < -250f)
         {
             Destroy(gameObject);
