@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion to = Quaternion.Euler(0f, 180f, 0f);
     private void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     void Update()
