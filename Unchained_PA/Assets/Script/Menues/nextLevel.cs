@@ -9,5 +9,6 @@ public class nextLevel : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         objectPooling.SharedInstance.amountToPool = objectPooling.SharedInstance.amountToPool + 10;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<damage>().hp = 100;
     }
 }

@@ -11,6 +11,9 @@ TagManager:
   - escapeCanvas
   - boss
   - EndCanvas
+  - world
+  - lightAtt
+  - pwrAttack
   layers:
   - Default
   - TransparentFX

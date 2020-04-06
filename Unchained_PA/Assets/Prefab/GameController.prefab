@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToPool: {fileID: 8918999653841576825, guid: 3225b5d16a2ef7c4bba2716d9bf6ad83,
     type: 3}
-  amountToPool: 200
+  amountToPool: 50
 --- !u!114 &8850086037028745767
 MonoBehaviour:
   m_ObjectHideFlags: 0

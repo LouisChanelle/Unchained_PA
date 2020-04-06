@@ -15,14 +15,22 @@ public class powerAttack : MonoBehaviour
     private Color colorEnd = Color.yellow + Color.red;
     private Renderer renderer;
     private int diffKills = 0;
-    private  int countKills;
+    public  int countKills;
     private Text CounterOfKill;
-    private float disp = 100f;
+    public float disp = 100f;
     private bool regen;
     private float cd = 2.5f;
     private float regenStart;
     
+    public static powerAttack SharedInstance;
+    
     [SerializeField] private GameObject can;
+
+    private void Awake()
+    {
+        SharedInstance = this;
+    }
+
     private void Start()
     {
         renderer = GetComponent<Renderer>();
@@ -56,6 +64,7 @@ public class powerAttack : MonoBehaviour
 
     private void Update()
     {
+        countKills = GameObject.FindGameObjectWithTag("lightAtt").GetComponent<enemyKiller>().countKills;
         float lerp = Mathf.PingPong(Time.time, 0.1f) / 0.1f;
         if (Input.GetKey(KeyCode.Mouse1) && disp > 7.5f && regen == false)
         {
