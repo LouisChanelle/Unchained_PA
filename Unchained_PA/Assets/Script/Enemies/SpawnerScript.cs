@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,23 +30,19 @@ public class SpawnerScript : MonoBehaviour
     void Update()
     {
         TextCountOfKill = CounterOfKill.text;
-        if (!TextCountOfKill.Equals("0") ) 
+        
+        if (!TextCountOfKill.Equals("0"))
         {
             if (Time.time - lastSpawnDate >= spawnDelay)
             {
+                //Debug.Log("spawn");
                 GameObject enemies = objectPooling.SharedInstance.GetPooledObject();
 
                 enemies.transform.position = spawner.transform.position;
                 enemies.GetComponent<RushToTarget>().target = playerTransform;
                 enemies.SetActive(true);
                 lastSpawnDate = Time.time;
-
-                /*var spawned = Instantiate(enemy, transform.position, Quaternion.identity);
-                spawned.GetComponent<RushToTarget>().target = playerTransform;
-                lastSpawnDate = Time.time;*/
             }
         }
-
-        Debug.Log(Time.time - lastSpawnDate);
     }
 }

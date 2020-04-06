@@ -15,7 +15,7 @@ public class enemyKiller : MonoBehaviour
     private Color colorEnd = Color.yellow + Color.red;
     private Renderer renderer;
     private int diffKills = 0;
-    public  int countKills;
+    private  int countKills;
     private Text CounterOfKill;
     
     [SerializeField] private GameObject can;
@@ -23,6 +23,8 @@ public class enemyKiller : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         colorStart = renderer.material.GetColor($"Color");
+
+        countKills = objectPooling.SharedInstance.amountToPool;
         
         CounterOfKill = can.GetComponent<Text>();
         CounterOfKill.text = countKills.ToString();

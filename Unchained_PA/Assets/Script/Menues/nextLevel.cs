@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class nextLevel : MonoBehaviour
 {
-    void NextLevel()
+    public void NextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        objectPooling.SharedInstance.amountToPool = objectPooling.SharedInstance.amountToPool + 10;
     }
 }

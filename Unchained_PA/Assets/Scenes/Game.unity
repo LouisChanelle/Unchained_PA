@@ -1122,6 +1122,11 @@ PrefabInstance:
       propertyPath: jumpStartSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: -3553701191419203655, guid: ea6a7504e56677c4085a57266d89f5fa,
+        type: 3}
+      propertyPath: jumpForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3109394131637482238, guid: ea6a7504e56677c4085a57266d89f5fa,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3168,7 +3173,7 @@ PrefabInstance:
     - target: {fileID: 2493518945304027637, guid: 828bd46949f4f1446ae25e6cf2743c5a,
         type: 3}
       propertyPath: countKills
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8012056933864965169, guid: 828bd46949f4f1446ae25e6cf2743c5a,
         type: 3}

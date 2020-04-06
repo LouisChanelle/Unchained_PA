@@ -42,7 +42,7 @@ public class worldGeneration : MonoBehaviour
             {
                 var pos = new Vector3(0, popedPrefab[i-1].transform.position.y,
                               popedPrefab[i-1].transform.localScale.z) 
-                          + new Vector3(0, UnityEngine.Random.Range(-10, 10) + 2,50);
+                          + new Vector3(0, UnityEngine.Random.Range(-10, 10),60*i);
 
                 Instantiate(prefab, pos, Quaternion.identity);
             }
