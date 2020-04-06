@@ -3560,10 +3560,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
-    - target: {fileID: 8850086037028745769, guid: 3b57f36c1d6d5054bbf8317928211e3f,
-        type: 3}
-      propertyPath: amountToPool
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b57f36c1d6d5054bbf8317928211e3f, type: 3}
