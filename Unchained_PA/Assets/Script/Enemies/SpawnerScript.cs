@@ -24,7 +24,6 @@ public class SpawnerScript : MonoBehaviour
         _rushToTarget = enemy.GetComponent<RushToTarget>();
         lastSpawnDate = Time.time;
         CounterOfKill = GameObject.FindGameObjectWithTag("CounterKill").GetComponent<Text>();
-        
     }
 
     void Update()
@@ -35,7 +34,6 @@ public class SpawnerScript : MonoBehaviour
         {
             if (Time.time - lastSpawnDate >= spawnDelay)
             {
-                //Debug.Log("spawn");
                 GameObject enemies = objectPooling.SharedInstance.GetPooledObject();
 
                 enemies.transform.position = spawner.transform.position;

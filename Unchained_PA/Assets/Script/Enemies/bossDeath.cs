@@ -47,6 +47,7 @@ public class bossDeath : MonoBehaviour
             if (bossIsIn)
             {
                 endCan.enabled = true;
+                Time.timeScale = 0;
             }
         }
     }

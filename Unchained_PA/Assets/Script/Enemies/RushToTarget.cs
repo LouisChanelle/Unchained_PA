@@ -8,13 +8,9 @@ public class RushToTarget : MonoBehaviour
     public Transform target;
     public float moveSpeed;
 
-    private void Start()
-    {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-    }
-
     void Update()
     {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         if (target == null)
         {
             return;
