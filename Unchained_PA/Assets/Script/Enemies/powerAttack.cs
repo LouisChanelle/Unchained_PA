@@ -104,8 +104,5 @@ public class powerAttack : MonoBehaviour
                 regen = false;
             }
         }
-        Debug.Log(disp);
-        Debug.Log(Time.time - regenStart);
-        Debug.Log(regen);
     }
 }

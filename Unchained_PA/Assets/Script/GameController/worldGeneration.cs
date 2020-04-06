@@ -19,11 +19,15 @@ public class worldGeneration : MonoBehaviour
 
     private GameObject SelectPrefab()
     {
+        int col = UnityEngine.Random.Range(0, 3);
+        
         prefabList.Add(Prefab1);
         prefabList.Add(Prefab2);
         prefabList.Add(Prefab3);
+        
 
         int prefabIndex = UnityEngine.Random.Range(0, 3);
+
         
         return prefabList[prefabIndex];
     }
@@ -32,8 +36,10 @@ public class worldGeneration : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
+
             GameObject prefab = SelectPrefab();
 
+            
             if (i == 0)
             {
                 Instantiate(prefab, Vector3.zero, Quaternion.identity);
