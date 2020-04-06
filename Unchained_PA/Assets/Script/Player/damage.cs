@@ -10,7 +10,14 @@ public class damage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        hp--;
+        if (other.gameObject.tag.Equals("boss"))
+        {
+            hp -= 3;
+        }
+        else
+        {
+            hp--;
+        }
 
         if (hp == 0)
         {

@@ -28,9 +28,8 @@ public class EndGame : MonoBehaviour
    
     void Update()
     {
-        GetCountKills = EnemyKiller.countKills;
+        GetCountKills = objectPooling.SharedInstance.amountToPool;
         
-        Debug.Log(Time.time);
         
         if (GetCountKills == 1)
         {
