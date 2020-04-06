@@ -6,17 +6,9 @@ using UnityEngine.UI;
 
 public class EndGame : MonoBehaviour
 {
-    public enemyKiller EnemyKiller;
     private int GetCountKills;
     private Canvas WinCanvas;
     private Canvas CanvasCount;
-
-
-    // Start is called before the first frame update
-    void Awake()
-    {
-        EnemyKiller= GetComponent<enemyKiller>();
-    }
     
     void Start()
     {
@@ -31,7 +23,7 @@ public class EndGame : MonoBehaviour
         GetCountKills = objectPooling.SharedInstance.amountToPool;
         
         
-        if (GetCountKills == 1)
+        if (GetCountKills <= 10)
         {
             WinCanvas.enabled = true;
         }

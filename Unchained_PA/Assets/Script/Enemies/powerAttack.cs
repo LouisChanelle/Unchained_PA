@@ -7,7 +7,7 @@ using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class enemyKiller : MonoBehaviour
+public class powerAttack : MonoBehaviour
 {
     private List<GameObject> nearEnemy = new List<GameObject>();
     private Collider _collider;
@@ -17,6 +17,10 @@ public class enemyKiller : MonoBehaviour
     private int diffKills = 0;
     private  int countKills;
     private Text CounterOfKill;
+    private float disp = 100f;
+    private bool regen;
+    private float cd = 2.5f;
+    private float regenStart;
     
     [SerializeField] private GameObject can;
     private void Start()
@@ -28,6 +32,8 @@ public class enemyKiller : MonoBehaviour
         
         CounterOfKill = can.GetComponent<Text>();
         CounterOfKill.text = countKills.ToString();
+
+        regen = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,8 +57,9 @@ public class enemyKiller : MonoBehaviour
     private void Update()
     {
         float lerp = Mathf.PingPong(Time.time, 0.1f) / 0.1f;
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse1) && disp > 7.5f && regen == false)
         {
+            disp -= 75f * Time.deltaTime;
             renderer.material.color = Color.Lerp(renderer.material.GetColor($"Color"), colorEnd, lerp);
             
             foreach (GameObject t in nearEnemy)
@@ -67,7 +74,6 @@ public class enemyKiller : MonoBehaviour
                     
                     diffKills = diffKills - 1;
                 }
-                //Destroy(t);
                 t.SetActive(false);
                 nearEnemy.Remove(t);
             }
@@ -77,5 +83,29 @@ public class enemyKiller : MonoBehaviour
         {
             renderer.material.color = colorStart;
         }
+
+        disp += 25f * Time.deltaTime;
+        
+        if (disp > 100f)
+        {
+            disp = 100f;
+        }
+
+        if (disp <= 7.5f)
+        {
+            regen = true;
+            regenStart = Time.time;
+        }
+
+        if (regen)
+        {
+            if (Time.time - regenStart >= cd)
+            {
+                regen = false;
+            }
+        }
+        Debug.Log(disp);
+        Debug.Log(Time.time - regenStart);
+        Debug.Log(regen);
     }
 }
