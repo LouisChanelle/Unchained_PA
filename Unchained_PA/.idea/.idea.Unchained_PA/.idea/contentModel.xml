@@ -10,14 +10,19 @@
           <e p="Enemies" t="Include">
             <e p="bossDeath.cs" t="Include" />
             <e p="enemyKiller.cs" t="Include" />
+            <e p="EnemyShoot.cs" t="Include" />
             <e p="powerAttack.cs" t="Include" />
             <e p="RushToTarget.cs" t="Include" />
             <e p="SpawnBoss.cs" t="Include" />
             <e p="SpawnerScript.cs" t="Include" />
+            <e p="TurretSpawner.cs" t="Include" />
           </e>
           <e p="GameController" t="Include">
             <e p="objectPooling.cs" t="Include" />
             <e p="worldGeneration.cs" t="Include" />
+          </e>
+          <e p="GUI" t="Include">
+            <e p="energyBar.cs" t="Include" />
           </e>
           <e p="Menues" t="Include">
             <e p="EndGame.cs" t="Include" />
