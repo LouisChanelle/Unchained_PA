@@ -59,6 +59,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnBoss.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,6 +74,7 @@
     <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/HitPointManagerScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -99,14 +101,16 @@
         <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +182,7 @@
       <workItem from="1586158631796" duration="3453000" />
       <workItem from="1586166634393" duration="17251000" />
       <workItem from="1586272749898" duration="1608000" />
-      <workItem from="1586952187922" duration="1704000" />
+      <workItem from="1586952187922" duration="6383000" />
     </task>
     <servers />
   </component>
