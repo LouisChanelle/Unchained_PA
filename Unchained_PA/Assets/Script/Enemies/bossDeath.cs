@@ -9,7 +9,7 @@ public class bossDeath : MonoBehaviour
     private List<GameObject> bossList = new List<GameObject>();
     private bool bossIsIn = false;
     private Canvas endCan;
-    public int hp;
+    private float hp = 100f;
     
     private void Start()
     {
@@ -41,9 +41,21 @@ public class bossDeath : MonoBehaviour
         {
             foreach (var t in bossList)
             {
-                Destroy(t);
+                hp -= 0.5f;
             }
 
+            
+        }
+
+        Debug.Log(hp);
+        
+        if (hp <= 0)
+        {
+            foreach (var t in bossList)
+            {
+                Destroy(t);
+            }
+            
             if (bossIsIn)
             {
                 endCan.enabled = true;
