@@ -18,6 +18,7 @@
             <e p="TurretSpawner.cs" t="Include" />
           </e>
           <e p="GameController" t="Include">
+            <e p="bulletPooling.cs" t="Include" />
             <e p="objectPooling.cs" t="Include" />
             <e p="worldGeneration.cs" t="Include" />
           </e>

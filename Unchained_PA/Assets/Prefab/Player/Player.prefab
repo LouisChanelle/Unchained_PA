@@ -140,4 +140,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {x: 0, y: 0, z: 0}
-  jumpForce: 8
+  jumpForce: 475
