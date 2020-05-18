@@ -68,6 +68,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/bulletPooling.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/mainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,8 +109,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/bulletPooling.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" />
       </list>
     </option>
@@ -182,7 +184,9 @@
       <workItem from="1586158631796" duration="3453000" />
       <workItem from="1586166634393" duration="17251000" />
       <workItem from="1586272749898" duration="1608000" />
-      <workItem from="1586952187922" duration="6383000" />
+      <workItem from="1586952187922" duration="6475000" />
+      <workItem from="1589630225530" duration="7436000" />
+      <workItem from="1589807352303" duration="1578000" />
     </task>
     <servers />
   </component>
