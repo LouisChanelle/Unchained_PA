@@ -8,11 +8,14 @@
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
           <e p="Enemies" t="Include">
+            <e p="aim.cs" t="Include" />
             <e p="bossDeath.cs" t="Include" />
             <e p="enemyKiller.cs" t="Include" />
             <e p="EnemyShoot.cs" t="Include" />
             <e p="powerAttack.cs" t="Include" />
+            <e p="projectile.cs" t="Include" />
             <e p="RushToTarget.cs" t="Include" />
+            <e p="Shield.cs" t="Include" />
             <e p="SpawnBoss.cs" t="Include" />
             <e p="SpawnerScript.cs" t="Include" />
             <e p="TurretSpawner.cs" t="Include" />

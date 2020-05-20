@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3813221420735182068}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: preset2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,6 +44,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: World3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331105630959607267, guid: c26f46045489d024cb42b29f946051c4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6331105630959607279, guid: c26f46045489d024cb42b29f946051c4,
         type: 3}
@@ -105,6 +110,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 6726151081095765760, guid: c26f46045489d024cb42b29f946051c4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c26f46045489d024cb42b29f946051c4, type: 3}
 --- !u!4 &5905995691487470464 stripped
@@ -120,10 +130,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3813221420735182068}
     m_Modifications:
+    - target: {fileID: 4030679732442682615, guid: d9484458b7ef69b4cba57958b2726b30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6331105630959607267, guid: d9484458b7ef69b4cba57958b2726b30,
         type: 3}
       propertyPath: m_Name
       value: World1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331105630959607267, guid: d9484458b7ef69b4cba57958b2726b30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6331105630959607279, guid: d9484458b7ef69b4cba57958b2726b30,
         type: 3}
@@ -205,6 +225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnerTurret
       objectReference: {fileID: 0}
+    - target: {fileID: 875594585490866522, guid: 2264f31aa17613e46b14ab242460deb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1515721124855111690, guid: 2264f31aa17613e46b14ab242460deb8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -279,10 +304,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3813221420735182068}
     m_Modifications:
+    - target: {fileID: 5574704373966735615, guid: 1f9306f56efe45142a25c2a86a0cd8af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6331105630959607267, guid: 1f9306f56efe45142a25c2a86a0cd8af,
         type: 3}
       propertyPath: m_Name
       value: World2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331105630959607267, guid: 1f9306f56efe45142a25c2a86a0cd8af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6331105630959607279, guid: 1f9306f56efe45142a25c2a86a0cd8af,
         type: 3}

@@ -12,22 +12,27 @@ public class damage : MonoBehaviour
         hp = 100;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag.Equals("boss"))
+        if (!Input.GetKey(KeyCode.LeftShift))
         {
-            hp -= 3;
-        }
-        else
-        {
-            hp--;
-        }
+            if (other.gameObject.tag.Equals("boss"))
+            {
+                hp -= 3;
+            }
+            else if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("bullet"))
+            {
+                hp--;
+            }
 
-        if (hp == 0)
-        {
-            Destroy(gameObject);
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+                Time.timeScale = 0;
+            }
         }
     }
 

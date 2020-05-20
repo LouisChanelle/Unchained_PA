@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6331105630959607265}
   - component: {fileID: 6331105630959607264}
   - component: {fileID: 200621909584202888}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: World2
   m_TagString: world
   m_Icon: {fileID: 0}
@@ -122,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544012257226854409, guid: 9cedd5951fd7b2a4d931fbc4f8968a13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6434350578106275219, guid: 9cedd5951fd7b2a4d931fbc4f8968a13,
         type: 3}

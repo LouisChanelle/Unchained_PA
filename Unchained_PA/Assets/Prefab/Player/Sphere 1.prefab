@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 7235873941773458858}
   - component: {fileID: 278236560970803856}
   - component: {fileID: 6887137001787126313}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sphere 1
-  m_TagString: Untagged
+  m_TagString: shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7605f20fcc68f644b2a26aa04f9fef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countKills: 0
+  disp: 100
   can: {fileID: 0}
 --- !u!114 &6887137001787126313
 MonoBehaviour:
@@ -133,4 +135,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294056ce10efbaf47975463cf572a284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 8

@@ -62,7 +62,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Jump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -98,21 +101,24 @@
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/bulletPooling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
       </list>
     </option>
   </component>
@@ -186,7 +192,8 @@
       <workItem from="1586272749898" duration="1608000" />
       <workItem from="1586952187922" duration="6475000" />
       <workItem from="1589630225530" duration="7436000" />
-      <workItem from="1589807352303" duration="1578000" />
+      <workItem from="1589807352303" duration="13020000" />
+      <workItem from="1589961392021" duration="9620000" />
     </task>
     <servers />
   </component>

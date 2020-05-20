@@ -1,28 +1,25 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
+using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class powerAttack : MonoBehaviour
+public class Shield : MonoBehaviour
 {
     private List<GameObject> nearEnemy = new List<GameObject>();
     private Collider _collider;
     private Color colorStart;
-    private Color colorEnd = Color.yellow + Color.red;
+    private readonly Color colorEnd = Color.blue;
     private Renderer renderer;
-    private int diffKills = 0;
-    public  int countKills;
-    private Text CounterOfKill;
     public float disp = 100f;
     private bool regen;
     private float cd = 2.5f;
     private float regenStart;
-    
-    public static powerAttack SharedInstance;
+    [SerializeField] private float cost = 75f;
+    [SerializeField] private float regenRate = 25f;
+
+    public static Shield SharedInstance;
     
     [SerializeField] private GameObject can;
 
@@ -36,56 +33,38 @@ public class powerAttack : MonoBehaviour
         renderer = GetComponent<Renderer>();
         colorStart = renderer.material.GetColor($"Color");
 
-        countKills = objectPooling.SharedInstance.amountToPool;
-        
-        CounterOfKill = can.GetComponent<Text>();
-        CounterOfKill.text = countKills.ToString();
 
         regen = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag($"enemy"))
+        if (other.gameObject.CompareTag($"bullet"))
         { 
+            Debug.Log(other.gameObject.name + " is IN");
             nearEnemy.Add(other.gameObject);
-            diffKills = diffKills + 1;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag($"enemy"))
+        if (other.gameObject.CompareTag($"bullet"))
         {
+            Debug.Log(other.gameObject.name + " is OUT");
             nearEnemy.Remove(other.gameObject);
-            diffKills = diffKills - 1;
         }
     }
 
     private void Update()
     {
-        
-        countKills = GameObject.FindGameObjectWithTag("lightAtt").GetComponent<enemyKiller>().countKills;
-        
         float lerp = Mathf.PingPong(Time.time, 0.1f) / 0.1f;
-        
-        if (Input.GetKey(KeyCode.Mouse1) && disp > 7.5f && regen == false)
+        if (Input.GetKey(KeyCode.LeftShift) && disp > 7.5f && regen == false)
         {
-            disp -= 75f * Time.deltaTime;
+            disp -= cost * Time.deltaTime;
             renderer.material.color = Color.Lerp(renderer.material.GetColor($"Color"), colorEnd, lerp);
             
             foreach (GameObject t in nearEnemy)
             {
-                if (diffKills > 0)
-                {
-                    if (countKills > 0)
-                    {
-                        countKills = countKills - 1;
-                        CounterOfKill.text = countKills.ToString();
-                    }
-                    
-                    diffKills = diffKills - 1;
-                }
                 t.SetActive(false);
                 nearEnemy.Remove(t);
             }
@@ -96,7 +75,7 @@ public class powerAttack : MonoBehaviour
             renderer.material.color = colorStart;
         }
 
-        disp += 25f * Time.deltaTime;
+        disp += regenRate * Time.deltaTime;
         
         if (disp > 100f)
         {
