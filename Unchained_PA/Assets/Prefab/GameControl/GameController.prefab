@@ -46,7 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToPool: {fileID: 8918999653841576825, guid: 3225b5d16a2ef7c4bba2716d9bf6ad83,
     type: 3}
-  amountToPool: 50
+  scndObjectToPool: {fileID: 8805216535888594386, guid: 0e80720a91c5ac7489d14cefc0519a8f,
+    type: 3}
+  amountToPool: 20
+  amountToPoolScnd: 0
 --- !u!114 &8850086037028745767
 MonoBehaviour:
   m_ObjectHideFlags: 0

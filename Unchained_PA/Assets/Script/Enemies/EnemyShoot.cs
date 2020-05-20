@@ -7,31 +7,33 @@ using UnityEngine;
 public class EnemyShoot : MonoBehaviour
 {
     public GameObject bullet;
-    private float waitTime = 2.0f;
+    [SerializeField] private float waitTime = 2.0f;
     private float timer = 0.0f;
-    private RushToTarget _rushToTarget;
+    private projectile _rushToTarget;
     public Transform playerTransform;
-    private RushToTarget _rushToTarget1;
+    private bool IsIn = false;
 
     private void Awake()
     {
-        _rushToTarget1 = bullet.GetComponent<RushToTarget>();
+        _rushToTarget = bullet.GetComponent<projectile>();
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerStay(Collider other)
     {
-        Debug.Log("In");
-        
-        timer += Time.deltaTime;
-        if (timer > waitTime)
+        Debug.Log("IN !");
+        if (other.gameObject.CompareTag("Player"))
         {
-            bullet = bulletPooling.SharedInstance.GetPooledObject();
+            timer += Time.deltaTime;
+            if (timer > waitTime)
+            {
+                bullet = bulletPooling.SharedInstance.GetPooledObject();
 
-            bullet.transform.position = gameObject.transform.position;
-            _rushToTarget1.target = playerTransform;
-            bullet.SetActive(true);
-            
-            timer = timer - waitTime;
+                bullet.transform.position = gameObject.transform.position;
+                _rushToTarget.target = playerTransform;
+                bullet.SetActive(true);
+
+                timer = timer - waitTime;
+            }
         }
     }
 }

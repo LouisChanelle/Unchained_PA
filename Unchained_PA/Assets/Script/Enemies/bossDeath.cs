@@ -46,9 +46,9 @@ public class bossDeath : MonoBehaviour
 
             
         }
-
-        Debug.Log(hp);
         
+        //Debug.Log(hp);
+
         if (hp <= 0)
         {
             foreach (var t in bossList)

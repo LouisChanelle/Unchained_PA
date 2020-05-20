@@ -14,6 +14,9 @@ TagManager:
   - world
   - lightAtt
   - pwrAttack
+  - turret
+  - shield
+  - bullet
   layers:
   - Default
   - TransparentFX
@@ -26,9 +29,9 @@ TagManager:
   - Player
   - Enemy
   - hitter
-  - 
-  - 
-  - 
+  - world
+  - shield
+  - bullet
   - 
   - 
   - 

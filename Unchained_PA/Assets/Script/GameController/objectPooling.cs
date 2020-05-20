@@ -8,15 +8,9 @@ public class objectPooling : MonoBehaviour
 {
     private List<GameObject> pooledObjects;
 
-    private List<GameObject> scndPool;
-
     public GameObject objectToPool;
 
-    public GameObject scndObjectToPool;
-
     public int amountToPool;
-
-    public int amountToPoolScnd;
 
     private bool shouldExpand;
 
@@ -31,7 +25,6 @@ public class objectPooling : MonoBehaviour
     void Start()
     {
         pooledObjects = new List<GameObject>();
-        scndPool = new List<GameObject>();
 
         for (int i = 0; i < amountToPool; i++)
         {
@@ -39,18 +32,11 @@ public class objectPooling : MonoBehaviour
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
-
-        for (int i = 0; i < amountToPoolScnd; i++)
-        {
-            GameObject obj = Instantiate(scndObjectToPool);
-            obj.SetActive(false);
-            scndPool.Add(obj);
-        }
     }
 
     public GameObject GetPooledObject()
     {
-        for (int i = 0; i < pooledObjects.Count; i++)
+        for(int i = 0; i < pooledObjects.Count; i++)
         {
             if (!pooledObjects[i].activeInHierarchy)
             {
@@ -58,19 +44,6 @@ public class objectPooling : MonoBehaviour
             }
         }
         
-        return null;
-    }
-
-    public GameObject GetScndPooledObject()
-    {
-        for (int i = 0; i < scndPool.Count; i++)
-        {
-            if (!scndPool[i].activeInHierarchy)
-            {
-                return scndPool[i];
-            }
-        }
-
         return null;
     }
 }
