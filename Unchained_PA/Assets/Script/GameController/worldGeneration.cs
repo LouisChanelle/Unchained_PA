@@ -16,6 +16,7 @@ public class worldGeneration : MonoBehaviour
 
     public GameObject Prefab3;
     private Vector3 _base = Vector3.zero;
+    [SerializeField] private int ite;
 
     private GameObject SelectPrefab()
     {
@@ -34,7 +35,7 @@ public class worldGeneration : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < ite; i++)
         {
 
             GameObject prefab = SelectPrefab();

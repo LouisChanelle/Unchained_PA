@@ -17,6 +17,10 @@ public class enemyKiller : MonoBehaviour
     public int diffKills = 0;
     public  int countKills;
     private Text CounterOfKill;
+    private float randDrop;
+    private float randProb;
+    public GameObject poLife;
+    public GameObject poEnergy;
     
     [SerializeField] private GameObject can;
     private void Start()
@@ -69,6 +73,17 @@ public class enemyKiller : MonoBehaviour
                     diffKills = diffKills - 1;
                 }
                 //Destroy(t);
+                randDrop = UnityEngine.Random.value;
+                randProb = UnityEngine.Random.value;
+
+                if (randDrop < 0.5f)
+                {
+                    Instantiate(poLife, t.transform);
+                }
+                else
+                {
+                    Instantiate(poEnergy, t.transform);
+                }
                 t.SetActive(false);
                 nearEnemy.Remove(t);
             }

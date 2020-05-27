@@ -10,7 +10,7 @@ public class SpawnerScript : MonoBehaviour
 
     [SerializeField] private Transform playerTransform;
 
-    [SerializeField] private float spawnDelay;
+    private float spawnDelay = 0.5f;
 
     [SerializeField] private GameObject spawner;
     

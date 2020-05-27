@@ -103,22 +103,22 @@
         <option value="$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/bulletPooling.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
       </list>
     </option>
   </component>
@@ -194,6 +194,7 @@
       <workItem from="1589630225530" duration="7436000" />
       <workItem from="1589807352303" duration="13020000" />
       <workItem from="1589961392021" duration="9620000" />
+      <workItem from="1590580219976" duration="7326000" />
     </task>
     <servers />
   </component>

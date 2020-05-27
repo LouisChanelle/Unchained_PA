@@ -21,6 +21,10 @@ public class powerAttack : MonoBehaviour
     private bool regen;
     private float cd = 2.5f;
     private float regenStart;
+    private float randDrop;
+    private float randProb;
+    public GameObject poLife;
+    public GameObject poEnergy;
     
     public static powerAttack SharedInstance;
     
@@ -85,6 +89,14 @@ public class powerAttack : MonoBehaviour
                     }
                     
                     diffKills = diffKills - 1;
+                }
+                if (randDrop < 0.5f && randProb > 0.9f)
+                {
+                    Instantiate(poLife, t.transform);
+                }
+                else if (randDrop > 0.5f && randProb > 0.9f)
+                {
+                    Instantiate(poEnergy, t.transform);
                 }
                 t.SetActive(false);
                 nearEnemy.Remove(t);
