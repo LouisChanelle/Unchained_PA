@@ -9,7 +9,7 @@ public class damage : MonoBehaviour
     public int hp;
     private void Start()
     {
-        hp = 100;
+        hp = 1000;
     }
 
     private void OnTriggerStay(Collider other)

@@ -20,7 +20,6 @@ public class EnemyShoot : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("IN !");
         if (other.gameObject.CompareTag("Player"))
         {
             timer += Time.deltaTime;
