@@ -39,6 +39,7 @@
             <e p="damage.cs" t="Include" />
             <e p="Jump.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="potions.cs" t="Include" />
           </e>
         </e>
       </e>
