@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class powerAttack : MonoBehaviour
@@ -25,6 +20,7 @@ public class powerAttack : MonoBehaviour
     private float randProb;
     public GameObject poLife;
     public GameObject poEnergy;
+    public bool activateDrop = true;
     
     public static powerAttack SharedInstance;
     
@@ -52,6 +48,7 @@ public class powerAttack : MonoBehaviour
     {
         if (other.gameObject.CompareTag($"enemy"))
         { 
+            Debug.Log("IN");
             nearEnemy.Add(other.gameObject);
             diffKills = diffKills + 1;
         }
@@ -61,6 +58,7 @@ public class powerAttack : MonoBehaviour
     {
         if (other.gameObject.CompareTag($"enemy"))
         {
+            Debug.Log("OUT");
             nearEnemy.Remove(other.gameObject);
             diffKills = diffKills - 1;
         }
@@ -90,14 +88,19 @@ public class powerAttack : MonoBehaviour
                     
                     diffKills = diffKills - 1;
                 }
-                if (randDrop < 0.5f && randProb > 0.9f)
+
+                if (activateDrop)
                 {
-                    Instantiate(poLife, t.transform);
+                    if (randDrop < 0.5f && randProb > 0.05f)
+                    {
+                        Instantiate(poLife, t.transform);
+                    }
+                    else if (randDrop > 0.5f && randProb > 0.05f)
+                    {
+                        Instantiate(poEnergy, t.transform);
+                    }
                 }
-                else if (randDrop > 0.5f && randProb > 0.9f)
-                {
-                    Instantiate(poEnergy, t.transform);
-                }
+
                 t.SetActive(false);
                 nearEnemy.Remove(t);
             }

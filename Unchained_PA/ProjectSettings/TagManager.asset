@@ -17,6 +17,8 @@ TagManager:
   - turret
   - shield
   - bullet
+  - poL
+  - poE
   layers:
   - Default
   - TransparentFX

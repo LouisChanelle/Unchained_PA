@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class damage : MonoBehaviour
@@ -38,7 +35,6 @@ public class damage : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(hp);
         if (gameObject.transform.position.y < -250f)
         {
             Destroy(gameObject);
