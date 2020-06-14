@@ -33,6 +33,8 @@
             <e p="escapeMenu.cs" t="Include" />
             <e p="mainMenu.cs" t="Include" />
             <e p="nextLevel.cs" t="Include" />
+            <e p="optionsMenu.cs" t="Include" />
+            <e p="sound.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="cameraOffset.cs" t="Include" />
@@ -40,6 +42,10 @@
             <e p="Jump.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="potions.cs" t="Include" />
+          </e>
+          <e p="Sound" t="Include">
+            <e p="music.cs" t="Include" />
+            <e p="musicGame.cs" t="Include" />
           </e>
         </e>
       </e>

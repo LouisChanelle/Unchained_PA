@@ -12,6 +12,7 @@ public class enemyKiller : MonoBehaviour
     public int diffKills = 0;
     public  int countKills;
     private Text CounterOfKill;
+    private Text Score;
     private float randDrop;
     private float randProb;
     public GameObject poLife;
@@ -28,6 +29,7 @@ public class enemyKiller : MonoBehaviour
         countKills = objectPooling.SharedInstance.amountToPool;
         
         CounterOfKill = can.GetComponent<Text>();
+        
         CounterOfKill.text = countKills.ToString();
         
         offsetSpawnPo = new Vector3(0f, -1f, 0f);
@@ -77,11 +79,11 @@ public class enemyKiller : MonoBehaviour
 
                 if (activateDrop)
                 {
-                    if (randDrop < 0.5f && randProb > 0.05f)
+                    if (randDrop < 0.5f && randProb < 0.05f)
                     {
                         Instantiate(poLife, t.transform);
                     }
-                    else if (randDrop < 0.5f && randDrop > 0.05f)
+                    else if (randDrop > 0.5f && randDrop < 0.05f)
                     {
                         Instantiate(poEnergy, t.transform);
                     }
