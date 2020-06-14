@@ -60,6 +60,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/musicGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/HitPointManagerScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/potions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,12 +78,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/cameraOffset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/bulletPooling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/music.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/mainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/optionsMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -115,8 +119,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/GameController/bulletPooling.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Menues/mainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
@@ -125,6 +127,12 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/potions.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/optionsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/mainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/sound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Sound/musicGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Sound/music.cs" />
       </list>
     </option>
   </component>
@@ -204,6 +212,10 @@
       <workItem from="1591569434791" duration="2027000" />
       <workItem from="1591572249514" duration="596000" />
       <workItem from="1591612235391" duration="3823000" />
+      <workItem from="1591714574193" duration="4798000" />
+      <workItem from="1591779555891" duration="1237000" />
+      <workItem from="1591876848348" duration="5280000" />
+      <workItem from="1592135717529" duration="8983000" />
     </task>
     <servers />
   </component>
