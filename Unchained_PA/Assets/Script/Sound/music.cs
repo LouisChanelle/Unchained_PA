@@ -14,11 +14,10 @@ public class music : MonoBehaviour
     private void Awake()
     {
         optionsObj = GameObject.Find("CanvasOptions");
-        masterVolume = optionsObj.GetComponentInChildren<Slider>().value;
-        
-        _audioSource.volume = PlayerPrefs.GetFloat("volume");
         masterVolume = PlayerPrefs.GetFloat("volume");
-        
+
+        optionsObj.GetComponentInChildren<Slider>().value = masterVolume;
+        _audioSource.volume = masterVolume;
         
         _audioSource.Play();
 
