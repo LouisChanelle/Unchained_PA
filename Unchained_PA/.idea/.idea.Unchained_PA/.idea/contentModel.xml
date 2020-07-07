@@ -34,6 +34,8 @@
             <e p="mainMenu.cs" t="Include" />
             <e p="nextLevel.cs" t="Include" />
             <e p="optionsMenu.cs" t="Include" />
+            <e p="resolution.cs" t="Include" />
+            <e p="screen.cs" t="Include" />
             <e p="sound.cs" t="Include" />
           </e>
           <e p="Player" t="Include">

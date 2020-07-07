@@ -17,7 +17,6 @@ public class musicGame : MonoBehaviour
         optionsObj.GetComponentInChildren<Slider>().value = masterVolume;
         _audioSource.volume = masterVolume;
         _audioSource.Play();
-        Debug.Log(PlayerPrefs.GetFloat("volume"));
     }
 
     public void ChangeVolume()

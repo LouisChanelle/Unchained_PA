@@ -21,7 +21,6 @@ public class music : MonoBehaviour
         
         _audioSource.Play();
 
-        Debug.Log(PlayerPrefs.GetFloat("volume"));
     }
 
     private void Update()
