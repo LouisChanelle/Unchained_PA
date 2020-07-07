@@ -28,7 +28,6 @@ public class Shield : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         colorStart = renderer.material.GetColor($"Color");
-        Debug.Log(renderer.material.name);
 
         regen = false;
     }
@@ -37,7 +36,6 @@ public class Shield : MonoBehaviour
     {
         if (other.gameObject.CompareTag($"bullet"))
         { 
-            Debug.Log("bullet is IN");
             nearEnemy.Add(other.gameObject);
         }
     }
@@ -47,7 +45,6 @@ public class Shield : MonoBehaviour
         if (other.gameObject.CompareTag($"bullet"))
         {
             nearEnemy.Remove(other.gameObject);
-            Debug.Log("bullet is OUT");
         }
     }
 

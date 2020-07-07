@@ -48,7 +48,6 @@ public class powerAttack : MonoBehaviour
     {
         if (other.gameObject.CompareTag($"enemy"))
         { 
-            Debug.Log("IN");
             nearEnemy.Add(other.gameObject);
             diffKills = diffKills + 1;
         }
@@ -58,7 +57,6 @@ public class powerAttack : MonoBehaviour
     {
         if (other.gameObject.CompareTag($"enemy"))
         {
-            Debug.Log("OUT");
             nearEnemy.Remove(other.gameObject);
             diffKills = diffKills - 1;
         }

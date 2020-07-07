@@ -58,6 +58,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/screen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/musicGame.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,13 +66,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/TurretSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/potions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/SpawnBoss.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/resolution.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Jump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,7 +114,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/EnemyShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/RushToTarget.cs" />
@@ -123,16 +126,20 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/cameraOffset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/potions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/optionsMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/mainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/sound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/deleteAllPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/musicGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/music.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/resolution.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/screen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
       </list>
     </option>
   </component>
@@ -217,6 +224,13 @@
       <workItem from="1591876848348" duration="5280000" />
       <workItem from="1592135717529" duration="8983000" />
       <workItem from="1592238856096" duration="1659000" />
+      <workItem from="1592242452359" duration="6676000" />
+      <workItem from="1593509186371" duration="8574000" />
+      <workItem from="1593600276962" duration="8238000" />
+      <workItem from="1593776170736" duration="3239000" />
+      <workItem from="1593859251780" duration="7603000" />
+      <workItem from="1593952365079" duration="131000" />
+      <workItem from="1594054779318" duration="4579000" />
     </task>
     <servers />
   </component>
