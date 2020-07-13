@@ -135,9 +135,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/Menues/deleteAllPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/musicGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/music.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/resolution.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Menues/resolution.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/screen.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
       </list>

@@ -26,6 +26,8 @@ public class powerAttack : MonoBehaviour
     
     [SerializeField] private GameObject can;
 
+    public Image Energy;
+
     private void Awake()
     {
         SharedInstance = this;
@@ -129,5 +131,8 @@ public class powerAttack : MonoBehaviour
                 regen = false;
             }
         }
+
+        Energy.fillAmount = disp;
+
     }
 }
