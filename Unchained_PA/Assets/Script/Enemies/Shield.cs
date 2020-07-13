@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shield : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Shield : MonoBehaviour
     public static Shield SharedInstance;
     
     [SerializeField] private GameObject can;
+
+    public Image Energy;
 
     private void Awake()
     {
@@ -88,5 +91,7 @@ public class Shield : MonoBehaviour
                 regen = false;
             }
         }
+
+        Energy.fillAmount = disp;
     }
 }

@@ -14,12 +14,6 @@ public class screen : MonoBehaviour
         PlayerPrefs.SetInt("height", 1080);
     }
 
-    private void Update()
-    {
-        Debug.Log(PlayerPrefs.GetInt("width"));
-        Debug.Log(PlayerPrefs.GetInt("height"));
-    }
-
     public void Fullscreen()
     {
         int width = PlayerPrefs.GetInt("width");
