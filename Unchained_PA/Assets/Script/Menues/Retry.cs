@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Retry : MonoBehaviour
 {
     public void TryAgain()
+
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameObject.FindGameObjectWithTag("Player").GetComponent<damage>().hp = 100;
