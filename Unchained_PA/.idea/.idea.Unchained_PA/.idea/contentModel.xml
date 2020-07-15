@@ -35,6 +35,7 @@
             <e p="nextLevel.cs" t="Include" />
             <e p="optionsMenu.cs" t="Include" />
             <e p="resolution.cs" t="Include" />
+            <e p="Retry.cs" t="Include" />
             <e p="screen.cs" t="Include" />
             <e p="sound.cs" t="Include" />
           </e>

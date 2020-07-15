@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
@@ -30,6 +31,14 @@ public class Jump : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag($"world"))
+        {
+            isGrounded = false;
+        }
+    }
+
     void Update(){
         
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
@@ -38,5 +47,8 @@ public class Jump : MonoBehaviour
             isGrounded = false;
             isOnWorld = false;
         }
+        
+        Debug.Log(isGrounded);
+        Debug.Log(isOnWorld);
     }
 }
