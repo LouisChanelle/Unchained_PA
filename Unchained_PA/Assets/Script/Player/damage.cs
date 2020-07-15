@@ -11,10 +11,14 @@ public class damage : MonoBehaviour
     public Image Health;
 
     public bool GODMODE = false;
+
+    public Canvas DeathScreen;
     
     private void Start()
     {
         hp = 1.0f;
+
+        DeathScreen.enabled = false;
     }
 
     private void OnTriggerStay(Collider other)
@@ -23,7 +27,7 @@ public class damage : MonoBehaviour
         {
             if (!Input.GetKey(KeyCode.LeftShift))
             {
-                if (other.gameObject.tag.Equals($"boss"))
+                if (other.gameObject.CompareTag($"boss"))
                 {
                     hp -= 0.03f;
                     Health.fillAmount = hp;
@@ -49,22 +53,22 @@ public class damage : MonoBehaviour
             {
                 if (other.gameObject.CompareTag($"enemy"))
                 {
-                    hp -= 0.1f;
+                    hp -= 0.02f;
                     Health.fillAmount = hp;
                 }
 
                 if (other.gameObject.CompareTag($"bullet"))
                 {
-                    hp -= 0.1f;
+                    hp -= 0.02f;
                     Health.fillAmount = hp;
                 }
 
                 if (hp <= 0)
                 {
-                    Destroy(gameObject);
+                    //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-
+                    DeathScreen.enabled = true;
+                    
                     Time.timeScale = 0;
                 }
             }
@@ -73,12 +77,11 @@ public class damage : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(hp);
         if (gameObject.transform.position.y < -150f)
         {
-            Destroy(gameObject);
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            DeathScreen.enabled = true;
+                    
+            Time.timeScale = 0;
         }
     }
 }

@@ -13,7 +13,7 @@ public class SpawnerScript : MonoBehaviour
     
     private float lastSpawnDate;
     private RushToTarget _rushToTarget;
-    private Text CounterOfKill;
+    public Text CounterOfKill;
     private string TextCountOfKill;
 
     void Start()

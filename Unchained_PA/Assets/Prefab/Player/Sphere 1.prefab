@@ -122,6 +122,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countKills: 0
   disp: 100
+  poLife: {fileID: 2955298494205247558, guid: 346602f62c5fffa45acd2c1647d1529b, type: 3}
+  poEnergy: {fileID: 766283162885642204, guid: 564ef3b17d841ca418f507dd10581cb0, type: 3}
+  activateDrop: 0
+  Mana: {fileID: 0}
   can: {fileID: 0}
 --- !u!114 &6887137001787126313
 MonoBehaviour:

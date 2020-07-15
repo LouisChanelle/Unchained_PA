@@ -14,7 +14,7 @@ public class powerAttack : MonoBehaviour
     private Text CounterOfKill;
     public float disp = 100f;
     private bool regen;
-    private float cd = 2.5f;
+    private float cd = 1.5f;
     private float regenStart;
     private float randDrop;
     private float randProb;
@@ -22,11 +22,14 @@ public class powerAttack : MonoBehaviour
     public GameObject poEnergy;
     public bool activateDrop = true;
     
+    private float cost = 75f;
+    private float regenRate = 25f;
+    
     public static powerAttack SharedInstance;
     
+    public Image Mana;
+    
     [SerializeField] private GameObject can;
-
-    public Image Energy;
 
     private void Awake()
     {
@@ -66,14 +69,13 @@ public class powerAttack : MonoBehaviour
 
     private void Update()
     {
-        
         countKills = GameObject.FindGameObjectWithTag("lightAtt").GetComponent<enemyKiller>().countKills;
         
         float lerp = Mathf.PingPong(Time.time, 0.1f) / 0.1f;
         
         if (Input.GetKey(KeyCode.Mouse1) && disp > 7.5f && regen == false)
         {
-            disp -= 75f * Time.deltaTime;
+            disp -= cost * Time.deltaTime;
             renderer.material.color = Color.Lerp(renderer.material.GetColor($"Color"), colorEnd, lerp);
             
             foreach (GameObject t in nearEnemy)
@@ -111,7 +113,7 @@ public class powerAttack : MonoBehaviour
             renderer.material.color = colorStart;
         }
 
-        disp += 25f * Time.deltaTime;
+        disp += regenRate * Time.deltaTime;
         
         if (disp > 100f)
         {
@@ -132,7 +134,7 @@ public class powerAttack : MonoBehaviour
             }
         }
 
-        Energy.fillAmount = disp;
-
+        Debug.Log(disp);
+        Mana.fillAmount = disp / 100f;
     }
 }

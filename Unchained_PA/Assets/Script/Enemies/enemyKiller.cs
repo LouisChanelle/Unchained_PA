@@ -11,7 +11,7 @@ public class enemyKiller : MonoBehaviour
     private Renderer renderer;
     public int diffKills = 0;
     public  int countKills;
-    private Text CounterOfKill;
+    public Text CounterOfKill;
     private Text Score;
     private float randDrop;
     private float randProb;
@@ -21,6 +21,8 @@ public class enemyKiller : MonoBehaviour
     private Vector3 offsetSpawnPo;
     
     [SerializeField] private GameObject can;
+    
+    
     private void Start()
     {
         renderer = GetComponent<Renderer>();
@@ -28,10 +30,10 @@ public class enemyKiller : MonoBehaviour
 
         countKills = objectPooling.SharedInstance.amountToPool;
         
-        CounterOfKill = can.GetComponent<Text>();
+        //CounterOfKill = can.GetComponent<Text>();
         
         CounterOfKill.text = countKills.ToString();
-        
+
         offsetSpawnPo = new Vector3(0f, -1f, 0f);
     }
 

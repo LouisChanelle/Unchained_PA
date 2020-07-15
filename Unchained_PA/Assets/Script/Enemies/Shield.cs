@@ -11,10 +11,10 @@ public class Shield : MonoBehaviour
     private Renderer renderer;
     public float disp = 100f;
     private bool regen;
-    private float cd = 2.5f;
+    private float cd = 1.5f;
     private float regenStart;
-    [SerializeField] private float cost = 75f;
-    [SerializeField] private float regenRate = 25f;
+    private float cost = 75f;
+    private float regenRate = 25f;
 
     public static Shield SharedInstance;
     
@@ -92,6 +92,6 @@ public class Shield : MonoBehaviour
             }
         }
 
-        Energy.fillAmount = disp;
+        Energy.fillAmount = disp / 100f;
     }
 }
