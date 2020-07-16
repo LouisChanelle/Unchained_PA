@@ -29,7 +29,7 @@ public class damage : MonoBehaviour
             {
                 if (other.gameObject.CompareTag($"boss"))
                 {
-                    hp -= 0.03f;
+                    hp -= 0.01f;
                     Health.fillAmount = hp;
                 }
 
@@ -53,13 +53,13 @@ public class damage : MonoBehaviour
             {
                 if (other.gameObject.CompareTag($"enemy"))
                 {
-                    hp -= 0.02f;
+                    hp -= 0.005f;
                     Health.fillAmount = hp;
                 }
 
                 if (other.gameObject.CompareTag($"bullet"))
                 {
-                    hp -= 0.02f;
+                    hp -= 0.005f;
                     Health.fillAmount = hp;
                 }
 
