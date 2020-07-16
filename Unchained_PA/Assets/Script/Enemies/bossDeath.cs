@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class bossDeath : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class bossDeath : MonoBehaviour
     private bool bossIsIn = false;
     private Canvas endCan;
     private float hp = 100f;
+    private Score score;
+    public static Text setScore; 
     
     private void Start()
     {
@@ -60,6 +63,8 @@ public class bossDeath : MonoBehaviour
             {
                 endCan.enabled = true;
                 Time.timeScale = 0;
+                score.SetScore(Convert.ToInt32(setScore));
+                DontDestroyOnLoad(setScore);
             }
         }
     }

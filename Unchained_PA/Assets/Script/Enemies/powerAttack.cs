@@ -11,7 +11,7 @@ public class powerAttack : MonoBehaviour
     private Renderer renderer;
     private int diffKills = 0;
     public  int countKills;
-    private Text CounterOfKill;
+    public Text CounterOfKill;
     public float disp = 100f;
     private bool regen;
     private float cd = 1.5f;
@@ -20,13 +20,16 @@ public class powerAttack : MonoBehaviour
     private float randProb;
     public GameObject poLife;
     public GameObject poEnergy;
-    public bool activateDrop = true;
+    public bool activateDrop = false;
+    public Text ScoreText;
+    
     
     private float cost = 75f;
     private float regenRate = 25f;
     
     public static powerAttack SharedInstance;
-    
+    private static int scrSh;
+
     public Image Mana;
     
     [SerializeField] private GameObject can;
@@ -43,7 +46,7 @@ public class powerAttack : MonoBehaviour
 
         countKills = objectPooling.SharedInstance.amountToPool;
         
-        CounterOfKill = can.GetComponent<Text>();
+        //CounterOfKill = can.GetComponent<Text>();
         CounterOfKill.text = countKills.ToString();
 
         regen = false;
@@ -104,6 +107,10 @@ public class powerAttack : MonoBehaviour
                 }
 
                 t.SetActive(false);
+                
+                enemyKiller.scored++;
+                ScoreText.text = enemyKiller.scored.ToString();
+
                 nearEnemy.Remove(t);
             }
         }
