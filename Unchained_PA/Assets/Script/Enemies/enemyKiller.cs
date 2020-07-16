@@ -12,15 +12,19 @@ public class enemyKiller : MonoBehaviour
     public int diffKills = 0;
     public  int countKills;
     public Text CounterOfKill;
-    private Text Score;
     private float randDrop;
     private float randProb;
     public GameObject poLife;
     public GameObject poEnergy;
-    public bool activateDrop = true;
+    public bool activateDrop = false;
     private Vector3 offsetSpawnPo;
+    public Text scoreText;
+    private int scr;
+    
     
     [SerializeField] private GameObject can;
+
+    public static int scored;
     
     
     private void Start()
@@ -92,6 +96,11 @@ public class enemyKiller : MonoBehaviour
                 }
 
                 t.SetActive(false);
+                
+                scored++;
+                scoreText.text = scored.ToString();
+                
+                
                 nearEnemy.Remove(t);
             }
         }

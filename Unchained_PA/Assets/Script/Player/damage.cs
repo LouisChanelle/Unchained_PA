@@ -35,9 +35,9 @@ public class damage : MonoBehaviour
 
                 if (hp <= 0)
                 {
-                    Destroy(gameObject);
+                    DeathScreen.enabled = true;
 
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                    //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
                     Time.timeScale = 0;
                 }
@@ -79,9 +79,9 @@ public class damage : MonoBehaviour
     {
         if (gameObject.transform.position.y < -150f)
         {
-            DeathScreen.enabled = true;
-                    
             Time.timeScale = 0;
+            
+            DeathScreen.enabled = true;
         }
     }
 }

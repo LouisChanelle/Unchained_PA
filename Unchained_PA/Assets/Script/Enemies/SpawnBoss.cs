@@ -10,7 +10,7 @@ public class SpawnBoss : MonoBehaviour
     private float lastSpawnDate;
     private RushToTarget rushToTarget;
     private enemyKiller cptKills;
-    private Text CounterOfKill;
+    public Text CounterOfKill;
     private string TextCountOfKill;
     private bool alreadySpawned;
 

@@ -121,6 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countKills: 0
+  CounterOfKill: {fileID: 145349397749677554, guid: dde54f2213b81b54f8a4c39f8ab21924,
+    type: 3}
   disp: 100
   poLife: {fileID: 2955298494205247558, guid: 346602f62c5fffa45acd2c1647d1529b, type: 3}
   poEnergy: {fileID: 766283162885642204, guid: 564ef3b17d841ca418f507dd10581cb0, type: 3}
