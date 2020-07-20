@@ -40,45 +40,6 @@ public class worldGeneration : MonoBehaviour
             {
                 Instantiate(prefab, Vector3.zero, Quaternion.identity);
             }
-            /*else
-            {
-                var pos = new Vector3(0, popedPrefab[i-1].transform.position.y,
-                              popedPrefab[i-1].transform.localScale.z) 
-                          + new Vector3(0, UnityEngine.Random.Range(-10, 2),80*i);
-
-                Instantiate(prefab, pos, Quaternion.identity);
-            }*/
-            
-            
-            /*else
-            {
-                if (popedPrefab[i-1] == Prefab1)
-                {
-                    pos += new Vector3(0, popedPrefab[i - 1].transform.position.y,
-                                  popedPrefab[i - 1].transform.localScale.z)
-                              + new Vector3(0, UnityEngine.Random.Range(-10, 2), 95);
-
-                    Instantiate(prefab, pos, Quaternion.identity);
-                }
-
-                else if (popedPrefab[i-1] == Prefab2)
-                {
-                    pos += new Vector3(0, popedPrefab[i - 1].transform.position.y,
-                                  popedPrefab[i - 1].transform.localScale.z)
-                              + new Vector3(0, UnityEngine.Random.Range(-10, 2), 80);
-
-                    Instantiate(prefab, pos, Quaternion.identity);
-                }
-                else if (popedPrefab[i-1] == Prefab3)
-                {
-                    pos += new Vector3(0, popedPrefab[i - 1].transform.position.y,
-                                  popedPrefab[i - 1].transform.localScale.z)
-                              + new Vector3(0, UnityEngine.Random.Range(-10, 2), 70);
-
-                    Instantiate(prefab, pos, Quaternion.identity);
-                }
-            }
-            popedPrefab.Add(prefab);*/
             
             else
             {

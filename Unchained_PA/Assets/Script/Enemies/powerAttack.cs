@@ -141,7 +141,6 @@ public class powerAttack : MonoBehaviour
             }
         }
 
-        Debug.Log(disp);
         Mana.fillAmount = disp / 100f;
     }
 }

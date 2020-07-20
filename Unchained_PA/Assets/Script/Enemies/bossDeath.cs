@@ -12,8 +12,9 @@ public class bossDeath : MonoBehaviour
     private Canvas endCan;
     private float hp = 100f;
     private Score score;
-    public static Text setScore; 
-    
+    public static Text setScore;
+  
+
     private void Start()
     {
         endCan = GameObject.FindGameObjectWithTag("EndCanvas").GetComponent<Canvas>();
@@ -49,22 +50,21 @@ public class bossDeath : MonoBehaviour
 
             
         }
-        
-        //Debug.Log(hp);
 
         if (hp <= 0)
         {
             foreach (var t in bossList)
             {
                 Destroy(t);
-            }
-            
-            if (bossIsIn)
-            {
-                endCan.enabled = true;
-                Time.timeScale = 0;
-                score.SetScore(Convert.ToInt32(setScore));
-                DontDestroyOnLoad(setScore);
+                
+                if (bossIsIn)
+                {
+                    GetComponent<Ending>().End();
+                    //endCan.enabled = true;
+                    //Time.timeScale = 0;
+                    score.SetScore(Convert.ToInt32(setScore));
+                    DontDestroyOnLoad(setScore);
+                }
             }
         }
     }

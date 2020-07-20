@@ -48,7 +48,5 @@ public class Jump : MonoBehaviour
             isOnWorld = false;
         }
         
-        Debug.Log(isGrounded);
-        Debug.Log(isOnWorld);
     }
 }
