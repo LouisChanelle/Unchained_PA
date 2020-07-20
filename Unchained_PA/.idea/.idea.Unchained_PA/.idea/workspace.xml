@@ -95,11 +95,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/escapeMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/GetTrad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menues/firstLang.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/cameraOffset.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Jump.cs" />
@@ -132,7 +132,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Menues/Retry.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnBoss.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Animation/Ending.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
@@ -150,6 +149,8 @@
         <option value="$PROJECT_DIR$/Assets/Script/Menues/languages.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/screen.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/sound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/firstLang.cs" />
       </list>
     </option>
   </component>
@@ -247,7 +248,7 @@
       <workItem from="1594847331854" duration="7018000" />
       <workItem from="1594915016727" duration="5150000" />
       <workItem from="1594928347824" duration="7325000" />
-      <workItem from="1595261962713" duration="9777000" />
+      <workItem from="1595261962713" duration="11250000" />
     </task>
     <servers />
   </component>
