@@ -35,6 +35,7 @@
           <e p="Menues" t="Include">
             <e p="EndGame.cs" t="Include" />
             <e p="escapeMenu.cs" t="Include" />
+            <e p="firstLang.cs" t="Include" />
             <e p="GetTrad.cs" t="Include" />
             <e p="languageGame.cs" t="Include" />
             <e p="languages.cs" t="Include" />
