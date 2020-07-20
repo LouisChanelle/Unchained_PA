@@ -9,8 +9,6 @@ public class objectPooling : MonoBehaviour
 
     public int amountToPool;
 
-    private bool shouldExpand;
-
     public static objectPooling SharedInstance;
     
 
@@ -19,7 +17,6 @@ public class objectPooling : MonoBehaviour
         SharedInstance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         pooledObjects = new List<GameObject>();

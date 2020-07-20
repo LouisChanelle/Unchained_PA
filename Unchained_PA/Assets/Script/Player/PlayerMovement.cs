@@ -20,10 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        var moveIntent = Vector3.zero;
-
         if (bossIsDead == false)
         {
+            var moveIntent = Vector3.zero;
+
+
             if (Input.GetKey(KeyCode.D))
             {
                 moveIntent += Vector3.forward;
@@ -35,12 +36,13 @@ public class PlayerMovement : MonoBehaviour
                 moveIntent += Vector3.back;
                 transform.rotation = Quaternion.Lerp(from, to, Time.time * rotSpeed);
             }
+
+
+            moveIntent = moveIntent.normalized;
+
+
+            transform.position += Time.deltaTime * moveSpeed * moveIntent;
         }
-
-        moveIntent = moveIntent.normalized;
-
-
-        transform.position += Time.deltaTime * moveSpeed * moveIntent;
     }
 
     private void OnTriggerEnter(Collider other)

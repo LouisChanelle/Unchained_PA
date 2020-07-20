@@ -9,6 +9,7 @@ public class Jump : MonoBehaviour
     private bool isGrounded;
     Rigidbody rb;
     private bool isOnWorld;
+    
     void Start(){
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);

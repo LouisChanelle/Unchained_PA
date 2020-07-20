@@ -11,13 +11,6 @@ public class Score
         scr = 0;
     }
 
-    /*public int Scr
-    {
-        get { return scr; }
-        set { scr = value; }
-    }*/
-    
-
     public int GetScore()
     {
         return this.scr;

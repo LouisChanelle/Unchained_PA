@@ -10,7 +10,6 @@ public class GetScored : MonoBehaviour
     
     void Awake()
     {
-        //score.text = getS.GetScore().ToString();
         score.text = bossDeath.setScore.text;
     }
 }

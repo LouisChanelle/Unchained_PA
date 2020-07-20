@@ -32,9 +32,6 @@
             <e p="objectPooling.cs" t="Include" />
             <e p="worldGeneration.cs" t="Include" />
           </e>
-          <e p="GUI" t="Include">
-            <e p="energyBar.cs" t="Include" />
-          </e>
           <e p="Menues" t="Include">
             <e p="EndGame.cs" t="Include" />
             <e p="escapeMenu.cs" t="Include" />
@@ -46,7 +43,6 @@
             <e p="resolution.cs" t="Include" />
             <e p="Retry.cs" t="Include" />
             <e p="screen.cs" t="Include" />
-            <e p="sound.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="cameraOffset.cs" t="Include" />

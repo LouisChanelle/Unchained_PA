@@ -35,10 +35,8 @@ public class languageGame : MonoBehaviour
 
     public void SwitchLang()
     {
-        Debug.Log("drp");
         if (drp.value == 0)
         {
-            Debug.Log("English");
             strLanguage = "Language";
             strFullscreen = "Fullscreen";
             strSound = "Sound";
@@ -56,7 +54,6 @@ public class languageGame : MonoBehaviour
         }
         else if (drp.value == 1)
         {
-            Debug.Log("French");
             strLanguage = "Langage";
             strFullscreen = "Plein écran";
             strSound = "Son";
@@ -86,13 +83,6 @@ public class languageGame : MonoBehaviour
         PlayerPrefs.SetString("suiv", strsuiv);
         PlayerPrefs.SetString("mainF", strMainF);
 
-        /*language.text = strLanguage;
-        fullscreen.text = strFullscreen;
-        sound.text = strSound;
-        retrn.text = strReturn;
-        returnEsc.text = strReturnEsc;
-        mainEsc.text = strMainEsc;*/
-        
         language.text = PlayerPrefs.GetString("lang");
         fullscreen.text = PlayerPrefs.GetString("full");
         sound.text = PlayerPrefs.GetString("sound");

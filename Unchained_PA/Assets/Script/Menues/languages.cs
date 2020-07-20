@@ -26,7 +26,6 @@ public class languages : MonoBehaviour
         Debug.Log("drp");
         if (drp.value == 0)
         {
-            Debug.Log("English");
             strLanguage = "Language";
             strFullscreen = "Fullscreen";
             strSound = "Sound";
@@ -38,7 +37,6 @@ public class languages : MonoBehaviour
         }
         else if (drp.value == 1)
         {
-            Debug.Log("French");
             strLanguage = "Langage";
             strFullscreen = "Plein écran";
             strSound = "Son";
@@ -56,13 +54,6 @@ public class languages : MonoBehaviour
         PlayerPrefs.SetString("return", strReturn);
         PlayerPrefs.SetString("play", strPlay);
         PlayerPrefs.SetString("quit", strQuit);
-
-        /*language.text = strLanguage;
-        fullscreen.text = strFullscreen;
-        sound.text = strSound;
-        retrn.text = strReturn;
-        play.text = strPlay;
-        quit.text = strQuit;*/
 
         language.text = PlayerPrefs.GetString("lang");
         fullscreen.text = PlayerPrefs.GetString("full");

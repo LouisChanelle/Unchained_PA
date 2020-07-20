@@ -17,8 +17,6 @@ public class worldGeneration : MonoBehaviour
 
     private GameObject SelectPrefab()
     {
-        int col = UnityEngine.Random.Range(0, 3);
-        
         prefabList.Add(Prefab1);
         prefabList.Add(Prefab2);
         prefabList.Add(Prefab3);
