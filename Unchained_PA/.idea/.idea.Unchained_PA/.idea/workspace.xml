@@ -62,6 +62,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Class/Score.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemies/aim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/GetScored.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Animation/Ending.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameController/objectPooling.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/musicGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/DL/2019_3A_3DJV_SimpleGameplayLoop_ButDirtyCodeAndArchitecture-master/Assets/HitPointManagerScript.cs" root0="SKIP_HIGHLIGHTING" />
@@ -100,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scenes/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/cameraOffset.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SpawnerScript.cs" />
@@ -124,7 +124,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/GUI/energyBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/nextLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/EndGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/cameraOffset.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/potions.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/optionsMenu.cs" />
@@ -137,20 +136,22 @@
         <option value="$PROJECT_DIR$/Assets/Script/Menues/resolution.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/screen.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/Shield.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/Retry.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/languages.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/SpawnBoss.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Menues/languageGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Menues/GetTrad.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Class/Score.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemies/enemyKiller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/GetScored.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameController/worldGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Menues/GetTrad.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/powerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Jump.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Animation/Ending.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemies/bossDeath.cs" />
       </list>
     </option>
   </component>
@@ -247,7 +248,8 @@
       <workItem from="1594831311157" duration="9752000" />
       <workItem from="1594847331854" duration="7018000" />
       <workItem from="1594915016727" duration="5150000" />
-      <workItem from="1594928347824" duration="6626000" />
+      <workItem from="1594928347824" duration="7325000" />
+      <workItem from="1595261962713" duration="5263000" />
     </task>
     <servers />
   </component>

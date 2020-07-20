@@ -25,7 +25,6 @@ public class GetTrad : MonoBehaviour
     
     private void Start()
     {
-        Debug.Log("getTrad");
         language.text = PlayerPrefs.GetString("lang");
         fullscreen.text = PlayerPrefs.GetString("full");
         sound.text = PlayerPrefs.GetString("sound");
