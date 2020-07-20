@@ -13,7 +13,7 @@ public class damage : MonoBehaviour
     public bool GODMODE = false;
 
     public Canvas DeathScreen;
-    
+
     private void Start()
     {
         hp = 1.0f;
@@ -36,8 +36,6 @@ public class damage : MonoBehaviour
                 if (hp <= 0)
                 {
                     DeathScreen.enabled = true;
-
-                    //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
                     Time.timeScale = 0;
                 }
@@ -65,10 +63,8 @@ public class damage : MonoBehaviour
 
                 if (hp <= 0)
                 {
-                    //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-
                     DeathScreen.enabled = true;
-                    
+
                     Time.timeScale = 0;
                 }
             }
@@ -80,7 +76,7 @@ public class damage : MonoBehaviour
         if (gameObject.transform.position.y < -150f)
         {
             Time.timeScale = 0;
-            
+
             DeathScreen.enabled = true;
         }
     }

@@ -46,7 +46,6 @@ public class powerAttack : MonoBehaviour
 
         countKills = objectPooling.SharedInstance.amountToPool;
         
-        //CounterOfKill = can.GetComponent<Text>();
         CounterOfKill.text = countKills.ToString();
 
         regen = false;

@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-/*Placed on "bullet" gameobject to make it target the player*/
-
 public class projectile : MonoBehaviour
 {
     public Transform target;

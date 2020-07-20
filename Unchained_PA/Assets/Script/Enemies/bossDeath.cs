@@ -60,8 +60,6 @@ public class bossDeath : MonoBehaviour
                 if (bossIsIn)
                 {
                     GetComponent<Ending>().End();
-                    //endCan.enabled = true;
-                    //Time.timeScale = 0;
                     score.SetScore(Convert.ToInt32(setScore));
                     DontDestroyOnLoad(setScore);
                 }

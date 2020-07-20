@@ -33,9 +33,7 @@ public class enemyKiller : MonoBehaviour
         colorStart = renderer.material.GetColor($"Color");
 
         countKills = objectPooling.SharedInstance.amountToPool;
-        
-        //CounterOfKill = can.GetComponent<Text>();
-        
+
         CounterOfKill.text = countKills.ToString();
 
         offsetSpawnPo = new Vector3(0f, -1f, 0f);
@@ -79,7 +77,6 @@ public class enemyKiller : MonoBehaviour
                     
                     diffKills = diffKills - 1;
                 }
-                //Destroy(t);
                 randDrop = UnityEngine.Random.value;
                 randProb = UnityEngine.Random.value;
 

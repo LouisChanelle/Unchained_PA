@@ -28,7 +28,6 @@ public class screen : MonoBehaviour
         else
         {
             Screen.fullScreenMode = FullScreenMode.Windowed;
-            //Screen.SetResolution(width, height, FullScreenMode.Windowed);
         }
 
     }

@@ -24,7 +24,6 @@ public class Ending : MonoBehaviour
     {
         if (isFinish == true)
         {
-            Debug.Log(isFinish + " is finish is True");
             if (player.GetComponent<PlayerMovement>().isGrounding() == true)
             {
                 if (animing == false)

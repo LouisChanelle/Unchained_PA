@@ -2473,6 +2473,16 @@ PrefabInstance:
       propertyPath: m_MinValue
       value: -0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1295909096906093039, guid: cceda60f0d265ef499b7a70c930c5e8a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295909096906093039, guid: cceda60f0d265ef499b7a70c930c5e8a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 846
+      objectReference: {fileID: 0}
     - target: {fileID: 1295909097124698900, guid: cceda60f0d265ef499b7a70c930c5e8a,
         type: 3}
       propertyPath: m_Value
@@ -2996,6 +3006,12 @@ MonoBehaviour:
   quit: {fileID: 827093259}
   returnEsc: {fileID: 0}
   mainEsc: {fileID: 0}
+  died: {fileID: 0}
+  tryA: {fileID: 0}
+  mainD: {fileID: 0}
+  lvl: {fileID: 0}
+  suiv: {fileID: 0}
+  mainF: {fileID: 0}
   drp: {fileID: 1666513537}
 --- !u!4 &2061837785
 Transform:

@@ -18,7 +18,6 @@ public class bulletPooling : MonoBehaviour
         SharedInstance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         pooledObjects = new List<GameObject>();
