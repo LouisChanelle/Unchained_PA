@@ -58,7 +58,7 @@ public class Shield : MonoBehaviour
         {
             disp -= cost * Time.deltaTime;
             renderer.material.color = Color.Lerp(renderer.material.GetColor($"Color"), colorEnd, lerp);
-            
+
             foreach (GameObject t in nearEnemy)
             {
                 t.SetActive(false);
@@ -66,32 +66,35 @@ public class Shield : MonoBehaviour
             }
         }
 
-        else if (!Input.GetKeyDown(KeyCode.Mouse0))
+        else
         {
-            renderer.material.color = colorStart;
-        }
-
-        disp += regenRate * Time.deltaTime;
-        
-        if (disp > 100f)
-        {
-            disp = 100f;
-        }
-
-        if (disp <= 7.5f)
-        {
-            regen = true;
-            regenStart = Time.time;
-        }
-
-        if (regen)
-        {
-            if (Time.time - regenStart >= cd)
+            if (!Input.GetKeyDown(KeyCode.Mouse0))
             {
-                regen = false;
+                renderer.material.color = colorStart;
+            }
+
+            disp += regenRate * Time.deltaTime;
+
+            if (disp > 100f)
+            {
+                disp = 100f;
+            }
+
+            if (disp <= 7.5f)
+            {
+                regen = true;
+                regenStart = Time.time;
+            }
+
+            if (regen)
+            {
+                if (Time.time - regenStart >= cd)
+                {
+                    regen = false;
+                }
             }
         }
-
+        
         Energy.fillAmount = disp / 100f;
     }
 }
