@@ -2290,7 +2290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   Health: {fileID: 2015047566}
-  GODMODE: 1
+  GODMODE: 0
   DeathScreen: {fileID: 802149955}
 --- !u!111 &839030035
 Animation:
@@ -3013,7 +3013,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1334, y: 589}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089043619
 MonoBehaviour:
@@ -6557,7 +6557,7 @@ PrefabInstance:
     - target: {fileID: 8850086037028745769, guid: 3b57f36c1d6d5054bbf8317928211e3f,
         type: 3}
       propertyPath: amountToPool
-      value: 1000
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b57f36c1d6d5054bbf8317928211e3f, type: 3}
